@@ -1,0 +1,1 @@
+"""Пакет EBPro Mini-MCP."""
