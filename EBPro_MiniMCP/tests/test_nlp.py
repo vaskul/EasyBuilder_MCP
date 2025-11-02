@@ -1,6 +1,7 @@
 """Юніт-тести для модуля nlp."""
 from __future__ import annotations
 
+# Third-party imports
 import pytest
 
 from ..nlp import NLPError, parse_instruction
