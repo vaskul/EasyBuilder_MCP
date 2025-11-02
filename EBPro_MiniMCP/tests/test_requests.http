@@ -1,0 +1,51 @@
+### Перевірка здоров'я
+GET http://localhost:8000/health
+
+### Версія сервісу
+GET http://localhost:8000/version
+
+### Відкрити проєкт
+POST http://localhost:8000/run
+Content-Type: application/json
+
+{
+  "text": "Відкрий проєкт \"D:\\HMI\\pump.emtp\""
+}
+
+### Збірка EXOB
+POST http://localhost:8000/run
+Content-Type: application/json
+
+{
+  "text": "Зібрати проєкт у exob"
+}
+
+### Офлайн-симуляція
+POST http://localhost:8000/run
+Content-Type: application/json
+
+{
+  "text": "Запусти офлайн симуляцію"
+}
+
+### Скріншот
+POST http://localhost:8000/run
+Content-Type: application/json
+
+{
+  "text": "Зроби скріншот",
+  "args": {
+    "out": "D:\\shots\\sim.png"
+  }
+}
+
+### Пакування у ECMP
+POST http://localhost:8000/run
+Content-Type: application/json
+
+{
+  "text": "Запакуй проект у ecmp",
+  "args": {
+    "out": "D:\\HMI\\export\\project.ecmp"
+  }
+}
